@@ -1,0 +1,35 @@
+{
+    "schemaversion": 1,
+    "id": "horizonmod",
+    "version": "${version}",
+
+    "name": "Horizon Mod",
+    "description": "A Minecraft mod that brings stuff from Horizon to Minecraft",
+    "authors": [
+        "Firestar4204"
+    ],
+    "contact": {
+        "homepage": "https://firestar4204.github.io/horizon-mod",
+        "sources": "https://github.com/firestar4204/horizon-mod"
+    },
+
+    "license": "GPL-3.0-only",
+    "icon": "assets/horizonmod/icon.png",
+
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "io.github.firestar4204.horizonmod.HorizonMod"
+        ]
+    },
+    "mixins": [
+        "horizonmod.mixins.json"
+    ],
+
+    "depends": {
+        "fabricloader": ">=0.11.3",
+        "fabric": "*",
+        "minecraft": "1.17.x",
+        "java": ">=16"
+    }
+}
